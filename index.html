@@ -19,16 +19,19 @@
         <p><a href="#contact">Contact Me</a></p>
       </nav>
     </header>
+
     <main>
       <section id="about">
-        <h2>Hello there!</h2>
-        <img src="./resources/images/professional-pic.jpg" alt="a black woman with short hair wearing a black shirt">
-        <p>I am an aspiring self-taught Full Stack Web Developer. My interests are in Javascript and Python. For the past few months, I have been learning about Front End development using HTML, CSS and JavaScript. I am also interested in building chatbots and Machine Learning. As a result, I have been learning Python. You can find more information about me in my <a href="./resources/supporting_documents/Black & White Minimalistic Professional Resume.pdf">resume</a>.
-          <br><br>
-          I am partially sighted due to a condition called Keratoconus. This has led to me becoming a disability activist. I would like to build accessible websites so that all people are able to use them despite their physical or mental condition.
-          <br><br>
-          When I am not coding I like taking nature walks, looking for the cosiest coffee shops in town or spending time with my friends and family. I am also an avid knitter!</p>
-      </section>
+          <article>
+            <h2>Hello there!</h2>
+            <p>I am an aspiring self-taught Full Stack Web Developer. My interests are in Javascript and Python. For the past few months, I have been learning about Front End development using HTML, CSS and JavaScript. I am also interested in building chatbots and Machine Learning. As a result, I have been learning Python. You can find more information about me in my <a href="./resources/supporting_documents/Black & White Minimalistic Professional Resume.pdf">resume</a>.
+            <br><br>
+            I am partially sighted due to a condition called Keratoconus. This has led to me becoming a disability activist. I would like to build accessible websites so that all people are able to use them despite their physical or mental condition.
+            <br><br>
+            When I am not coding I like taking nature walks, looking for the cosiest coffee shops in town or spending time with my friends and family. I am also an avid knitter!</p>
+          </article>
+          <img id="profile-pic" src="./resources/images/professional-pic.jpg" alt="a black woman with short hair wearing a black shirt">
+        </section>
 
       <section id="skills">
         <h2>Skills</h2>
@@ -58,25 +61,40 @@
 
       <section id="projects">
         <h2>Projects</h2>
+
         <article>
-          <h3 id="flexbox-business">Flexbox Business Webpage</h3>
-          <div>
+          <h3 id="flexboxBusiness">1. Flexbox Business Webpage</h3>
+          <div id="flexboxBusinessBlock">
             <p>This is a webpage for an imaginary book and coffee shop. It was created with Flexbox and it is responsive. Please click here to view the web page click here for the repository.</p>
             <img src="./resources/images/coffee-shop.png" alt="A screenshot of the Cozy Corner Coffee shop webpage">
           </div>
         </article>
+
         <article>
-          <h3 id="mystery-organism">Mystery Organism Generator</h3>
-          <div>
+          <h3 id="mysteryOrganism">2. Mystery Organism Generator</h3>
+          <div id="mysteryOrganismBlock">
             <p>An object is generated that represents a mysterious organism called pAequeor. This object contains the organisms DNA code which contains 15 bases and a specimen number. It has number of functions such as a mutating function and a function that compares the DNA of two organisms. Please click here for the repository</p>
             <img src="./resources/images/organisms.png" alt="A screenshot of the output from a terminal when two mystery organisms are generated">
           </div>
         </article>
+
         <article>
-          <h3 id="chatbot">Coffee Chatbot</h3>
-          <div>
+          <h3 id="chatbot">3. Coffee Chatbot</h3>
+          <div id="chatbotBlock">
             <p>This allows a customer to order coffee using a chatbot. Please click here for the repository</p>
             <img src="./resources/images/coffee.png" alt="A screenshot of the output from a terminal when a customer orders coffee">
+          </div>
+        </article>
+
+        <article>
+          <h3 id="coffeeApp">4. The Cozy Corner App Prototype Created Through Figma</h3>
+          <div id="coffeeAppBlock">
+            
+            <a href="https://www.figma.com/proto/j1s8Y1T8wHMG0MCSZYiqhQ/Cozy-Corner-App?node-id=2%3A3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A3" target="_blank">Cozy Corner App Prototype</a>
+             <iframe
+          
+           style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fj1s8Y1T8wHMG0MCSZYiqhQ%2FCozy-Corner-App%3Fnode-id%3D2%253A3%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D2%253A3" allowfullscreen></iframe>
+            
           </div>
         </article>
       </section>
@@ -84,19 +102,19 @@
       <section id="contact">
         <h2>Contact Me</h2>
         <article>
-          <img src="./resources/images/stackoverflow-512.webp" alt="stackoverflow logo">
+          <img class="icon" src="./resources/images/stackoverflow-512.webp" alt="stackoverflow logo">
           <p><a href="https://stackoverflow.com/users/15305992/kanyisa-ntombini?tab=profile">Stack overflow username: </a></p>
         </article>
         <article>
-          <img src="./resources/images/github.png" alt="github logo">
+          <img class="icon" src="./resources/images/github.png" alt="github logo">
           <p><a href="https://github.com/Kanyisa-Ntombini">Github username: </a></p>
         </article>
         <article>
-          <img src="./resources/images/linkedin.webp" alt="linkedin logo">
+          <img class="icon" src="./resources/images/linkedin.webp" alt="linkedin logo">
           <p><a href="https://www.linkedin.com/in/kanyisa-ntombini/">Linkedin</a></p>
         </article>
         <article>
-          <img src="./resources/images/gmail.png" alt="gmail logo">
+          <img class="icon" src="./resources/images/gmail.png" alt="gmail logo">
           <p>Email address: </p><p>kanyisa.ntombini@gmail.com</p>
         </article>
       </section>

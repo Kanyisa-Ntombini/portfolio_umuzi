@@ -29,7 +29,6 @@ a:hover {
 h1 {
   font-size: 3rem;
   width: 70%;
-  align-items: center;
 }
 
 nav {
@@ -37,4 +36,32 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items:center;
+}
+
+/* MAIN */
+#profile-pic {
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  width: 80%;
+  margin-top: 2rem;
+}
+#about {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2rem;
+}
+
+article h3 {
+  text-decoration: underline;
+}
+article h3:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+article div {
+  display: none;
+}
+
+.icon {
+  width: 5rem;
 }
