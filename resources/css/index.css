@@ -4,10 +4,25 @@ body {
   padding: 0;
 }
 
+p {
+  text-align: justify;
+}
+
+p, ul li {
+  line-height: 1.8;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* HEADER */
 header {
   background-color: #74F5CD;
   display: flex;
+  padding: 0 1rem;
 }
 
 a {
@@ -39,29 +54,28 @@ nav {
 }
 
 /* MAIN */
-#profile-pic {
-  border: 0.2rem solid black;
-  border-radius: 1rem;
-  width: 80%;
-  margin-top: 2rem;
+main {
+  margin: 0 1rem 1rem 1rem;
 }
 #about {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 2rem;
 }
-
-article h3 {
-  text-decoration: underline;
+#profile-pic {
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  width: 80%;
+  margin: 4rem auto;
 }
-article h3:hover {
+
+#projects h3 {
   text-decoration: none;
+}
+#projects h3:hover {
+  text-decoration: underline;
   cursor: pointer;
 }
-article div {
+#projects div {
   display: none;
-}
-
-.icon {
-  width: 5rem;
 }
