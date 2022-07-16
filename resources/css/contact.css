@@ -5,12 +5,8 @@ h2 {
   margin-bottom: 4rem;
 }
 
-div a {
-  text-decoration: none;
-}
-
 div a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 div p {

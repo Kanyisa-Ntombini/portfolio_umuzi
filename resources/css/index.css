@@ -59,14 +59,14 @@ main {
 }
 #about {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-gap: 2rem;
 }
 #profile-pic {
   border: 0.2rem solid black;
   border-radius: 1rem;
   width: 80%;
-  margin: 4rem auto;
+  margin: 1.5rem auto auto auto;
 }
 
 #projects h3 {
