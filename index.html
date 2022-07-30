@@ -11,20 +11,23 @@
 <body>
   <div>
     <header>
-      <h1>Kanyisa Ntombini</h1>
       <nav>
-        <p><a href="#about">About Me</a></p>
+        <p class="mobile">Home</p>
+        <p class="mobile"><a href="#about">About Me</a></p>
         <p><a href="#skills">Skills</a></p>
-        <p><a href="#projects">Projects</a></p>
-        <p><a href="./resources/tabs/contact.html">Contact Me</a></p>
+        <p><a href="./resources/tabs/projects.html">Projects</a></p>
+        <p><a href="#contact">Contact Me</a></p>
       </nav>
+      <div id="banner">
+        <div id="profile-pic-container">
+          <a href="#"><img id="profile-pic" src="./resources/images/professional-pic.jpg" alt="a black woman with short hair wearing a black shirt"></a>
+        </div>
+        <h1>Kanyisa Ntombini</h1>
+      </div>
     </header>
 
     <main>
       <section id="about">
-        <div id="profile-pic-container">
-          <img id="profile-pic" src="./resources/images/professional-pic.jpg" alt="a black woman with short hair wearing a black shirt">
-        </div>
           <article>
             <h2>Hello there!</h2>
             <p>I am an aspiring self-taught Full Stack Web Developer. My interests are in Javascript and Python. For the past few months, I have been learning about Front End development using HTML, CSS and JavaScript. I am also interested in building chatbots and Machine Learning. As a result, I have been learning Python. You can find more information about me in my <a href="./resources/supporting_documents/Black & White Minimalistic Professional Resume.pdf">resume</a>.
@@ -37,68 +40,69 @@
 
       <section id="skills">
         <h2>Skills</h2>
+        <h3>Programming Languages and Frameworks</h3>
         <article>
-          <h3>Programming Languages</h3>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-          </ul>
+          <figure>
+            <img src="./resources/images/html.png" alt="An HTML 5 icon">
+            <figcaption>HTML</figcaption>
+          </figure>
+          <figure>
+            <img src="./resources/images/css-3.png" alt="A CSS 3 icon ">
+            <figcaption>CSS</figcaption>
+          </figure>
+          <figure>
+            <img src="./resources/images/python.png" alt="A Python icon">
+            <figcaption>Python</figcaption>
+          </figure>
+          <figure>
+            <img src="./resources/images/mocha.png" alt="A Mocha icon">
+            <figcaption>Mocha</figcaption>
+          </figure>
+          <figure>
+            <img src="./resources/images/jasmine.png" alt="A Jasmine icon">
+            <figcaption>Jasmine</figcaption>
+          </figure>
         </article>
+        <h3>Other Skills and Interests</h3>
         <article>
-          <h3>Frameworks</h3>
-          <ul>
-            <li>Mocha</li>
-            <li>Jasmine</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Other Skills and Interests</h3>
-          <ul>
-            <li>Git and Github</li>
-            <li>Machine Learning</li>
-            <li>Automation/Chatbots</li>
-            <li>UI/UX Design</li>
-          </ul>
+          <figure>
+            <img src="./resources/images/github.png" alt="A Github icon">
+            <figcaption>Git and Github</figcaption>
+          </figure>
+          <figure>
+            <img src="./resources/images/machine-learning.png" alt="A machine learning icon"><p class="program-lang-description"></p>
+            <figcaption>Machine Learning</figcaption>
+          </figure>
+          <figure>
+            <img src="./resources/images/chatbot.png" alt="A chatbot icon">
+            <figcaption>Chatbots and Automation</figcaption>
+          </figure>
+          <figure>
+            <img src="./resources/images/ux-design.png" alt="A UX design icon">
+            <figcaption>UX Design</figcaption>
+          </figure>
         </article>
       </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <p>These are some of the projects I created. Please click on the name
-          of each project to view it. The first project is a webpage for a 
-          coffee shop. The next is a prototype designed on Figma of an app 
-          where customers can order coffee as a takeaway from the coffee shop.
-          The final project is a chatbot where the customers can order their
-          coffee.</p>
-
-        <article>
-          <h3 id="flexboxBusiness">1. Flexbox Business Webpage</h3>
-          <div id="flexboxBusinessBlock">
-            <p>This is a <a href="https://kanyisa-ntombini.github.io/flexbox-business-site-starting">webpage</a> for the book and coffee shop. It was created with Flexbox. Please feel free to view the <a href="https://github.com/Kanyisa-Ntombini/flexbox-business-site-starting">repository</a> for more information.</p>
-            <img src="./resources/images/coffee-shop.png" alt="A screenshot of the Cozy Corner Coffee shop webpage">
-          </div>
-        </article>
-
-        <article>
-          <h3 id="coffeeApp">2. The Cozy Corner App Prototype</h3>
-          <div id="coffeeAppBlock">
-            <p>This is the <a href="https://www.figma.com/proto/j1s8Y1T8wHMG0MCSZYiqhQ/Cozy-Corner-App?node-id=2%3A3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A3" target="_blank">Cozy Corner App Prototype</a> for the coffee shop's app. It was created with Figma.</p>
-            
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fj1s8Y1T8wHMG0MCSZYiqhQ%2FCozy-Corner-App%3Fnode-id%3D2%253A3%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D2%253A3" allowfullscreen></iframe>
-            
-          </div>
-        </article>
-
-        <article>
-          <h3 id="chatbot">3. Coffee Chatbot</h3>
-          <div id="chatbotBlock">
-            <p>This is the coffeebot where customers can order coffee. It was created with Python. Please feel free to view the <a href="https://github.com/Kanyisa-Ntombini/coffee-maker-bot">repository</a> for more information.</p>
-            <img src="./resources/images/coffee.png" alt="A screenshot of the output from a terminal when a customer orders coffee">
-          </div>
-        </article>
+      <section id="contact">
+        <h2>Contact Me</h2>
+          <p>Github: <a href="https://github.com/Kanyisa-Ntombini">@Kanyisa-Ntombini</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/kanyisa-ntombini/">@kanyisa-ntombini</a></p>
+          <p>Email: kanyisa.ntombini@gmail.com</p>
       </section>
     </main>
+
+    <footer>
+      <h2>Credits</h2>
+      <ul>
+        <li><a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a></li>
+        <li><a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Pixel perfect - Flaticon</a></li>
+        <li><a href="https://www.flaticon.com/free-icons/python" title="python icons">Python icons created by Freepik - Flaticon</a></li>
+        <li><a href="https://www.flaticon.com/free-icons/machine-learning" title="machine learning icons">Machine learning icons created by gungyoga04 - Flaticon</a></li>
+        <li><a href="https://www.flaticon.com/free-icons/chatbot" title="chatbot icons">Chatbot icons created by Smashicons - Flaticon</a></li>
+        <li><a href="https://www.flaticon.com/free-icons/front-end" title="front end icons">Front end icons created by Freepik - Flaticon</a></li>
+      </ul>
+    </footer>
   </div>
 </body>
 </html>
