@@ -13,6 +13,10 @@ p, ul li {
   line-height: 1.8;
 }
 
+ul li {
+  text-align: right;
+}
+
 a {
   color: black;
 }
@@ -38,7 +42,7 @@ h1, h2, h3, h4 {
 
 /* HEADER */
 #profile-pic {
-  border: 0.1rem solid black;
+  border: 0.2rem solid crimson;
   border-radius: 50%;
 }
 #profile-pic-container {
@@ -48,6 +52,9 @@ h1, h2, h3, h4 {
 nav {
   display: flex;
   justify-content: space-around;
+}
+nav a {
+  color: crimson;
 }
 
 /* MAIN */
