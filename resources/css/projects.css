@@ -1,6 +1,30 @@
-section {
-  margin-bottom: 4rem;
+
+
+figure, article {
+  margin: 0 auto;
+  width: 90%;
 }
+
+figcaption {
+  margin-top: 1rem;
+}
+
+iframe {
+  display: block;
+  width: 100%;
+}
+
+
+/*
+#prototype {
+  width: 80%;
+  background-color: pink;
+}*/
+
+/*section {
+  margin-bottom: 4rem;
+}*/
+
 /*
 .project {
   display: grid;
