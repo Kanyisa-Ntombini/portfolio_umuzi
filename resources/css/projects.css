@@ -1,5 +1,3 @@
-
-
 figure, article {
   margin: 0 auto;
   width: 90%;
@@ -13,45 +11,3 @@ iframe {
   display: block;
   width: 100%;
 }
-
-
-/*
-#prototype {
-  width: 80%;
-  background-color: pink;
-}*/
-
-/*section {
-  margin-bottom: 4rem;
-}*/
-
-/*
-.project {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-/*h2 {
-  text-align: center;
-  font-size: 3rem;
-  margin-top: 1rem;
-  margin-bottom: 4rem;
-}
-
-div a:hover {
-  text-decoration: none;
-}
-
-div p {
-  text-align: center;
-}
-
-.social-media {
-  width: 24%;
-  display: inline-block;
-}
-
-.icon {
-  width: 5rem;
-  margin: auto;
-}*/
