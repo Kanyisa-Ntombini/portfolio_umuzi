@@ -1,13 +1,3 @@
-figure, article {
-  margin: 0 auto;
-  width: 90%;
-}
-
-figcaption {
-  margin-top: 1rem;
-}
-
-iframe {
-  display: block;
-  width: 100%;
+#projects h3 {
+  text-align: center;
 }

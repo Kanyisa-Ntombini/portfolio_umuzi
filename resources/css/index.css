@@ -1,33 +1,21 @@
+html,
 body {
-  font-family: sans-serif;
-  width: 90%;
-  margin: 1rem auto;
+  height: 100%;
+  width: 100%;
+  margin: 0;
   padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 16px;
 }
 
-p {
-  text-align: justify;
-}
-
-p, ul li {
-  line-height: 1.8;
-}
-
-ul li {
-  text-align: right;
-}
-
-a {
-  color: black;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:visited {
-  color: gray;
-}
+/* ROOT FONT STYLES */
+/*
+* {
+  /*font-family: 'Lato', Helvetica, sans-serif;
+  color: #333447;/
+  line-height: 1.5;
+}*/
 
 img {
   display: block;
@@ -35,72 +23,65 @@ img {
   height: auto;
 }
 
-h1, h2, h3, h4 {
+h1, h2 {
   text-align: center;
 }
 
-.mobile {
-  display: block;
+h1 {
+  font-size: 2.9em;
 }
 
-.desktop {
-  display: none;
+h2 {
+  font-size: 2.4em;
 }
 
-@media screen and (min-width: 48rem){
-  .desktop {
-    display: block;
-  } 
-
-  .mobile {
-    display: none;
-  }
-  
-  h1 {
-    font-size: 4rem;
-  }
-  .profile-pic {
-    max-width: 100%;
-  }
-  
-  .banner {
-    background-color: crimson;
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-  }
-
-  #skills figure {
-    width: 10%;
-  }
+h3 {
+  font-size: 1.5em;
 }
 
-/* HEADER */
-.profile-pic {
-  border-radius: 50%;
-  width: 50%;
-  margin: 0.5rem auto;
+p {
+  font-size: 1.2em;
+  text-align: justify;
 }
-nav {
-  border: 0.2rem solid crimson;
-  background-color: mintcream;
-  border-radius: 2rem;
-  display: flex;
-  justify-content: space-around;
-}
-nav a {
+
+a {
+  font-size: 1.1em;
+  text-decoration: none;
   color: black;
 }
 
-/* MAIN */
-#skills figure {
-  width: 20%;
+a:hover {
+  cursor: pointer;
 }
-#skills figcaption {
-  text-align: center;
-}
-#skills article {
+
+/* HEADER */
+nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 12em;
+  margin: 0 auto;
+}
+
+/* MAIN */
+.profile-picture {
+  border: 0.1em solid black;
+  border-radius: 50%;
+}
+
+.profile-picture-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+.contact-heading {
+  text-align: left;
+}
+
+.social-media-icons {
+  width: 3em;
+}
+
+.social-media-icons-container {
+  display: flex;
 }

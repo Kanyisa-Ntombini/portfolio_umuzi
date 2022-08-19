@@ -9,26 +9,19 @@
   <title>Kanyisa Ntombini's Portfolio - Contact Me</title>
 </head>
 <body>
-  <div>
-    <header>
-      <nav>
-        <p class="desktop"><a href="../../index.html">Home</a></p>
-        <p><a href="../../index.html">About Me</a></p>
-        <p><a href="../../index.html">Skills</a></p>
-        <p>Projects</p>
-        <p class="desktop"><a href="../../index.html">Contact Me</a></p>
-      </nav>
-      <div class="banner">
-        <a href="../../index.html"><img src="../images/professional-pic.jpg" alt="" class="profile-pic"></a>
-        <h1>Kanyisa Ntombini</h1>
-      </div>
-      <hr class="mobile">
-    </header>
-
-    <main>
+  <header>
+    <h1><a href="../../index.html">Kanyisa Ntombini</a></h1>
+    <nav>
+      <p><a href="./skills.html">Skills</a></p>
+      <p><a href="#projects">Projects</a></p>
+      <p><a href="#contact">Contact</a></p>
+    </nav>
+  </header>
+  <hr>
+    <main id="projects">
       <h2>Projects</h2>
 
-      <h4>Flexbox Business Webpage</h4>
+      <h3>Flexbox Business Webpage</h4>
       <section class="project">
         <figure>
           <img src="../images/reading-coffee.jpg" alt="">
@@ -38,18 +31,16 @@
           <p>This is a <a href="https://kanyisa-ntombini.github.io/flexbox-business-site-starting" target="_blank">webpage</a> for an imaginary book and coffee shop called The Cozy Corner. It has been created with Flexbox and CSS Grid. Please feel free to view the <a href="https://github.com/Kanyisa-Ntombini/flexbox-business-site-starting" target="_blank">repository</a> for more information.</p>
         </article>
       </section>
-      <hr>
 
-      <h4>The Cozy Corner App Prototype</h4>
+      <h3>The Cozy Corner App Prototype</h4>
       <section class="project">
-        <figure id="prototype">
+      <!--  <figure id="prototype">
             <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fj1s8Y1T8wHMG0MCSZYiqhQ%2FCozy-Corner-App%3Fnode-id%3D2%253A3%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D2%253A3" allowfullscreen></iframe>
-          </figure>
+          </figure> -->
         <article><p>This is the <a href="https://www.figma.com/proto/j1s8Y1T8wHMG0MCSZYiqhQ/Cozy-Corner-App?node-id=2%3A3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A3" target="_blank">prototype</a> for The Cozy Corner's app. Customers can use this app to order books and hot drinks online and get them delivered to their doorstep.  It was created with Figma.</p></article>
       </section>
-      <hr>
 
-      <h4>Coffee Chatbot</h4>
+      <h3>Coffee Chatbot</h4>
       <section class="project">
         <figure>
           <img src="../images/chatbot-projects.jpg" alt="A man typing on a smart phone">
@@ -59,6 +50,24 @@
         <article><p>The Cozy Corner App will be powered by a chatbot created with Python. Please feel free to view the <a href="https://github.com/Kanyisa-Ntombini/coffee-maker-bot" target="_blank">repository</a> for more information.</p></article>
       </section>
     </main>
-  </div>
+
+    <hr>
+    <footer id="contact">
+      <h2 class="contact-heading">Contact</h2>
+      <section>
+        <h3>Email:</h3>
+        <p>kanyisa.ntombini@gmail.com</p>
+      </section>
+      <section>
+        <h3>Follow me:</h3>
+        <div class="icons-container">
+          <a href="https://github.com/Kanyisa-Ntombini" target="_blank"><img class="social-media-icons" src="./resources/images/github.png" alt=""></a>
+          <a href="https://www.linkedin.com/in/kanyisa-ntombini/" target="_blank"><img class="social-media-icons" src="./resources/images/linkedin.webp" alt=""></a>
+        </div>
+      </section>
+      <section>
+        <p>&copy; 2022 By Kanyisa Ntombini</p>
+      </section>
+    </footer>
 </body>
 </html>
