@@ -20,3 +20,13 @@ figcaption {
   display: flex;
   justify-content: center;
 } 
+
+@media screen and (min-width: 768px) {
+  .programming-icons-container {
+    justify-content: space-around;
+  }
+
+  figure {
+    width: 6rem;   
+  }
+}

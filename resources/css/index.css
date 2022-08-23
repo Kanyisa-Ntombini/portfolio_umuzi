@@ -63,6 +63,17 @@ nav ul li a {
   font-size: 1.2em;
   text-decoration: none;
 }
+
+@media screen and (min-width: 768px) {
+  header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }  
+  h1 {
+    text-align: left;
+  }
+}
+
 /* MAIN */
 .profile-picture {
   border: 0.1em solid black;
@@ -72,6 +83,21 @@ nav ul li a {
 .profile-picture-container {
   width: 50%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  #about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75%;
+    background-color: pink;
+    margin: 0 auto;
+  }
+  
+  .profile-picture-container {
+    width: 100%;
+    margin: 0em;
+  }
 }
 
 /* FOOTER */
@@ -85,4 +111,11 @@ nav ul li a {
 
 .social-media-icons-container {
   display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .social-media {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

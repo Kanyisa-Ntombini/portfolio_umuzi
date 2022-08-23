@@ -1,3 +1,8 @@
 #projects h3 {
   text-align: center;
 }
+
+figure {
+  width: 50%;
+  margin: 0 auto;
+}
