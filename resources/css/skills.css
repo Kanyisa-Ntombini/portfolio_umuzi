@@ -8,14 +8,15 @@ figure {
 
 figcaption {
   text-align: center;
+  font-size: 0.9em;
 }
 
 /*
 .programming-icons {
 
 }
-
-.programming-icons-container {
-
-}
 */
+.programming-icons-container {
+  display: flex;
+  justify-content: center;
+} 
