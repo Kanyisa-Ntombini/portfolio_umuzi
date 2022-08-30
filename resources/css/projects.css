@@ -2,7 +2,13 @@
   text-align: center;
 }
 
-figure {
-  width: 50%;
-  margin: 0 auto;
+figcaption {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 48rem){
+  figure {
+    width: 50%;
+    margin: 0 auto;
+  }
 }

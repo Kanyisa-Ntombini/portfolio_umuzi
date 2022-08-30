@@ -14,8 +14,7 @@ body {
 
 * {
   font-family: 'Lato', Helvetica, sans-serif;
-  color: #333447;/*
-  line-height: 1.5;*/
+  color: #333447;
 }
 
 img {
@@ -29,20 +28,22 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 2.9em;
+  font-size: 2.9rem;
+  background-color: lightpink;
 }
 
 h2 {
-  font-size: 2.4em;
+  font-size: 2.4rem;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 p {
   font-size: 1em;
   text-align: justify;
+  line-height: 1.8;
 }
 
 a:hover {
@@ -53,14 +54,19 @@ a:hover {
 nav ul {
   display: flex;
   justify-content: center;
+  background-color: lightblue;
+  padding: 0;
 }
 
 nav ul li {
   list-style: none;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: yellow;
 }
 
 nav ul li a {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   text-decoration: none;
 }
 
@@ -76,27 +82,33 @@ nav ul li a {
 
 /* MAIN */
 .profile-picture {
-  border: 0.1em solid black;
+  border: 0.2rem solid black;
   border-radius: 50%;
 }
 
 .profile-picture-container {
   width: 50%;
   margin: 0 auto;
+  /*background-color: aqua;*/
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   #about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 75%;
-    background-color: pink;
     margin: 0 auto;
+    /*background-color: lightgreen;*/
+  }
+
+  #about h2 {
+    margin: 2rem;
   }
   
   .profile-picture-container {
     width: 100%;
-    margin: 0em;
+    margin: 0;
+    padding-top: 2rem;
   }
 }
 
@@ -106,16 +118,21 @@ nav ul li a {
 }
 
 .social-media-icons {
-  width: 3em;
+  width: 3rem;
+  margin-right: 1rem;
 }
 
 .social-media-icons-container {
   display: flex;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   .social-media {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+footer p {
+  line-height: 3;
 }
