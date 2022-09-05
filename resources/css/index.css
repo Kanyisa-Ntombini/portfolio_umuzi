@@ -7,6 +7,7 @@ body {
   left: 0;
   top: 0;
   font-size: 16px;
+  background-color: #d6f1f1;
 }
 
 /* ROOT FONT STYLES */
@@ -15,6 +16,10 @@ body {
 * {
   font-family: 'Lato', Helvetica, sans-serif;
   color: #333447;
+}
+
+.side-margins {
+  margin: 16px 24px;
 }
 
 img {
@@ -53,6 +58,10 @@ p {
 
 a:hover {
   cursor: pointer;
+}
+
+hr {
+  border: 1px solid black;
 }
 
 /* HEADER */
@@ -110,8 +119,14 @@ nav ul li a {
   #about {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;;
     width: 75%;
     margin: 0 auto;
+  }
+
+  #about p {
+    /*background-color: aqua;*/
+    line-height: 1.5;
   }
 
   #about h2 {
@@ -121,7 +136,8 @@ nav ul li a {
   .profile-picture-container {
     width: 100%;
     margin: 0;
-    padding-top: 2rem;
+    padding: 2rem 0;
+    /*background-color: yellow;*/
   }
 }
 
