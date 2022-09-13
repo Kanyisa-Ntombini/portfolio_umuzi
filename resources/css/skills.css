@@ -1,6 +1,16 @@
-#skills h3 {
+main h2 {
+  margin-top: 2rem;
+}
+
+main h3 {
+  margin: 2rem 0;
   text-align: center;
 }
+
+.programming-icons-container {
+  display: flex;
+  justify-content: space-around;
+} 
 
 figure {
   width: 3em;
@@ -12,21 +22,12 @@ figcaption {
   margin-top: 1rem;
 }
 
-/*
-.programming-icons {
-
+main hr {
+  margin-top: 2rem;
 }
-*/
-.programming-icons-container {
-  display: flex;
-  justify-content: center;
-} 
+
 
 @media screen and (min-width: 768px) {
-  .programming-icons-container {
-    justify-content: space-around;
-  }
-
   figure {
     width: 6rem;   
   }
