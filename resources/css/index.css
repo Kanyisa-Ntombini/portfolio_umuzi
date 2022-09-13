@@ -9,9 +9,7 @@
 body {
   font-size: 16px;
   margin: 2rem;
-  /*background-color: lightpink;
    background-color: #d6f1f1;
-  */
 }
 
 img {
@@ -27,7 +25,7 @@ hr {
 
 a:hover {
   cursor: pointer;
-  color: magenta;
+  color: blueviolet;
 }
 
 h1, h2, h3, h4 {
@@ -115,25 +113,9 @@ h2 {
     margin: 0rem auto;
   }
 
-  #about p {
+  main p {
     font-size: 1.125rem;
   }
-
-/*  
-
-  #about h2 {
-    margin: 2rem;
-  }
-  
-  .profile-picture-container {
-    width: 100%;
-    padding: 1rem 0;
-    /*background-color: yellow;
-  }
-
-  .profile-picture {
-    margin: 0 auto;
-  }*/
 }
 
 /* FOOTER */

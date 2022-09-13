@@ -7,6 +7,11 @@ main h3 {
   margin: 1.5rem 0;;
 }
 
+iframe {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 figure img, iframe {
   width: 20rem;
   height: 20rem;
@@ -19,7 +24,6 @@ figcaption {
 footer hr {
   margin-top: 1rem;
 }
-
 
 @media screen and (min-width: 48rem){
   figure img, iframe {
