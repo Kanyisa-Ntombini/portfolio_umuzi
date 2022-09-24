@@ -7,14 +7,26 @@
   <link rel="stylesheet" href="./resources/css/reset.css">
   <link rel="stylesheet" href="./resources/css/index.css">
   <title>Kanyisa Ntombini Portfolio</title>
+  <script src="./resources/js/index.js" async></script>
 </head>
 <body>
   <header>
+    <nav class="mobile">
+      <div class="sidenav" id="sideNavWidth">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" class="currentpage">Home</a>
+        <a href="#about">About</a>
+        <a href="./resources/pages/skills.html">Skills</a>
+        <a href="./resources/pages/projects.html">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="openbtn" onclick="openNav()">&#9776;</div>
+    </nav>
     <h1><a href="#">Kanyisa Ntombini</a></h1>
-    <nav>
+    <nav class="desktop">
       <ul>
-        <li><a href="./resources/pages/skills.html">Skills</a></li>
-        <li><a href="./resources/pages/projects.html">Projects</a></li>
+        <li><a href="./skills.html">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>

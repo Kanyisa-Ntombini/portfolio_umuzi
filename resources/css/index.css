@@ -52,6 +52,56 @@ h1 a {
   text-decoration: none;
 }
 
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: none;
+}
+
+.sidenav {
+  height: 100%;
+  background-color: lightgray;
+  position: fixed;
+  /*width: 14rem;*/
+  width: 0;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding: 1rem 0;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  display: block;
+  transition: 0.3s;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.sidenav a:hover {
+  color: lightseagreen;
+}
+
+.sidenav .closebtn {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 10rem;
+}
+
+.openbtn {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.currentpage {
+  color: violet;
+}
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -68,6 +118,13 @@ nav ul li a {
 }
 
 @media screen and (min-width: 48rem) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+
   header {
     display: grid;
     grid-template-columns: 2fr 1fr;

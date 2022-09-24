@@ -8,11 +8,23 @@
   <link rel="stylesheet" type="text/css" href="../css/index.css">
   <link rel="stylesheet" type="text/css" href="../css/projects.css">
   <title>Kanyisa Ntombini's Portfolio - Contact Me</title>
+  <script src="../js/index.js" async></script>
 </head>
 <body>
   <header>
-    <h1><a href="../../index.html">Kanyisa Ntombini</a></h1>
-    <nav>
+    <nav class="mobile">
+      <div class="sidenav" id="sideNavWidth">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../../index.html">Home</a>
+        <a href="../../index.html">About</a>
+        <a href="./skills.html">Skills</a>
+        <a href="#" class="currentpage">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="openbtn" onclick="openNav()">&#9776;</div>
+    </nav>
+    <h1><a href="#">Kanyisa Ntombini</a></h1>
+    <nav class="desktop">
       <ul>
         <li><a href="./skills.html">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -21,6 +33,7 @@
     </nav>
   </header>
   <hr>
+
     <main>
       <h2>Projects</h2>
 
