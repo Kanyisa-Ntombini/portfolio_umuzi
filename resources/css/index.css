@@ -8,8 +8,8 @@
 
 body {
   font-size: 16px;
-  margin: 2rem;
-   background-color: #d6f1f1;
+  margin-left: 1.5rem;
+  background-color: #d6f1f1;
 }
 
 img {
@@ -25,7 +25,7 @@ hr {
 
 a:hover {
   cursor: pointer;
-  color: blueviolet;
+  color: lightseagreen;
 }
 
 h1, h2, h3, h4 {
@@ -48,7 +48,7 @@ header h1 {
   margin-bottom: 1rem;
 }
 
-h1 a {
+header a {
   text-decoration: none;
 }
 
@@ -96,47 +96,64 @@ h1 a {
 .openbtn {
   cursor: pointer;
   font-size: 2rem;
+  margin: 1.5rem 0;
 }
 
 .currentpage {
-  color: violet;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-
-nav ul li {
-  margin: 0 0.5rem;
-}
-
-nav ul li a {
-  font-size: 1.2rem;
-  text-decoration: none;
+  color: navy;
 }
 
 @media screen and (min-width: 48rem) {
+  body {
+    background-color: white;
+  }
+
   .desktop {
     display: block;
   }
+
   .mobile {
     display: none;
   }
 
   header {
+    background-color: lightseagreen;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: end;
-  }  
-  h1 {
-    text-align: left;
   }
 
+  header a:hover {
+    color: grey;
+  }
+  
   nav ul {
     display: flex;
     justify-content: end;
+  }
+
+  header h1 {
+    text-align: left;
+    margin: 0;
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  nav ul {
+    padding: 1rem;
+  }
+
+  nav ul li {
+    margin: 0 0.5rem;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
   }
 }
 
@@ -160,6 +177,12 @@ h2 {
 }
 
 @media screen and (min-width: 48rem) {
+  main {
+    position: relative;
+    top: 5rem;
+    width: 96%;
+  }
+
   #about {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -200,6 +223,13 @@ h3, .copyright {
 }
 
 @media screen and (min-width: 48rem) {
+  footer {
+    position: relative;
+    top: 5rem;
+    width: 96%;
+    padding-bottom: 1rem;
+  }
+
   .contact-me {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
