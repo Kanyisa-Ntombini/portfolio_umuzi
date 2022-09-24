@@ -21,6 +21,7 @@ img {
 hr {
   border: 1px solid black;
   margin: 0;
+  width: 96%;
 }
 
 a:hover {
@@ -43,6 +44,10 @@ p {
 }
 
 /* HEADER */
+header, hr {
+  position: relative;
+  top: 5rem;
+}
 header h1 {
   font-size: 2.9rem;
   margin-bottom: 1rem;
@@ -64,7 +69,6 @@ header a {
   height: 100%;
   background-color: lightgray;
   position: fixed;
-  /*width: 14rem;*/
   width: 0;
   z-index: 1;
   top: 0;
@@ -97,6 +101,8 @@ header a {
   cursor: pointer;
   font-size: 2rem;
   margin: 1.5rem 0;
+  position: fixed;
+  top: 0;
 }
 
 .currentpage {
@@ -158,6 +164,16 @@ header a {
 }
 
 /* MAIN */
+main, footer  {
+  transition: margin-left .5s;
+  padding: 2rem;
+}
+
+main {
+  position: relative;
+  top: 5rem
+}
+
 .profile-picture {
   border: 0.2rem solid black;
   border-radius: 50%;
@@ -199,6 +215,11 @@ h2 {
 }
 
 /* FOOTER */
+footer {
+  position: relative;
+  top: 3rem
+}
+
 footer h2 {
   text-align: left;
   margin-top: 1rem;
