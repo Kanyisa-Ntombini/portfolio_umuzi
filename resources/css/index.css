@@ -8,7 +8,6 @@
 
 body {
   font-size: 16px;
-  margin-left: 1.5rem;
   background-color: #d6f1f1;
 }
 
@@ -21,7 +20,6 @@ img {
 hr {
   border: 1px solid black;
   margin: 0;
-  width: 96%;
 }
 
 a:hover {

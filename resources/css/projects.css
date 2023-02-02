@@ -6,6 +6,11 @@ main h3 {
   text-align: center;
   margin: 1.5rem 0;;
 }
+.paragraph-separator {
+  font-weight: 900; 
+  text-align: center; 
+  font-size: 32px;
+}
 
 iframe {
   display: block;
@@ -29,7 +34,17 @@ footer hr {
 
 @media screen and (min-width: 48rem){
   figure img, iframe {
-    width: 30rem;
-    height: 30rem;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .project-box {
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    width: 50%;
+    margin: 0 auto;
   }
 }
