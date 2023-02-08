@@ -8,6 +8,8 @@
 
 body {
   font-size: 16px;
+  /* margin-left: 1.5rem; */
+  padding: 0;
   background-color: #d6f1f1;
 }
 
@@ -20,6 +22,7 @@ img {
 hr {
   border: 1px solid black;
   margin: 0;
+  width: 100%;
 }
 
 a:hover {
@@ -65,7 +68,7 @@ header a {
 
 .sidenav {
   height: 100%;
-  background-color: lightgray;
+  background-color: black;
   position: fixed;
   width: 0;
   z-index: 1;
@@ -74,9 +77,12 @@ header a {
   overflow-x: hidden;
   padding: 1rem 0;
   transition: 0.5s;
+  opacity: 0.8;
 }
 
 .sidenav a {
+  color: white;
+  font-weight: 700;
   display: block;
   transition: 0.3s;
   padding: 0.5rem 0.5rem 0.5rem 2rem;
@@ -88,15 +94,19 @@ header a {
   position: relative;
   font-size: 2.5rem;
   font-weight: bold;
-  margin-left: 10rem;
+  margin-left: 85%;
+  /* right: 0; */
+  /* background-color: yellow; */
+  width: 100%;
 }
 
 .openbtn {
   cursor: pointer;
   font-size: 2rem;
-  margin: 1.5rem 0;
+  margin: 1.5rem 1rem;
   position: fixed;
   top: 0;
+  width: 1.75rem;
 }
 
 .currentpage {
@@ -164,7 +174,7 @@ header a {
 /* MAIN */
 main, footer  {
   transition: margin-left .5s;
-  padding: 2rem;
+  padding: 3.75rem;
 }
 
 main {
