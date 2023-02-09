@@ -1,61 +1,10 @@
+/* This website is coded with a mobile first approach */
 /* ROOT FONT STYLES */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
 
 * {
   font-family: 'Lato', Helvetica, sans-serif;
   color: #333447;
-}
-
-body {
-  font-size: 16px;
-  /* margin-left: 1.5rem; */
-  padding: 0;
-  background-color: #d6f1f1;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-hr {
-  border: 1px solid black;
-  margin: 0;
-  width: 100%;
-}
-
-a:hover {
-  cursor: pointer;
-  color: lightseagreen;
-}
-
-h1, h2, h3, h4 {
-  font-weight: bold;
-}
-
-h1, h2 {
-  text-align: center;
-}
-
-p {
-  font-size: 1rem;
-  text-align: justify;
-  line-height: 1.8;
-}
-
-/* HEADER */
-header, hr {
-  position: relative;
-  top: 5rem;
-}
-header h1 {
-  font-size: 2.9rem;
-  margin-bottom: 1rem;
-}
-
-header a {
-  text-decoration: none;
 }
 
 .mobile {
@@ -66,7 +15,69 @@ header a {
   display: none;
 }
 
-.sidenav {
+/* HTML ELEMENTS for the whole document */
+body {
+  font-size: 16px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+a:hover {
+  cursor: pointer;
+  color: lightseagreen;
+}
+
+hr {
+  border: 1px solid black;
+  margin: 0;
+  width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* HEADER */
+/* HTML ELEMENTS FOR HEADER */
+header {
+  background-color: lightseagreen;
+  position: relative;
+  top: 5rem;
+}
+
+header h1 {
+  font-size: 2.9rem;
+  margin-bottom: 1rem;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:hover {
+  color: white;
+}
+
+/* Classes for header */
+.side-nav {
   height: 100%;
   background-color: black;
   position: fixed;
@@ -80,7 +91,7 @@ header a {
   opacity: 0.8;
 }
 
-.sidenav a {
+.side-nav a {
   color: white;
   font-weight: 700;
   display: block;
@@ -90,96 +101,33 @@ header a {
   font-size: 1.5rem;
 }
 
-.sidenav .closebtn {
+.cross-icon {
   position: relative;
   font-size: 2.5rem;
   font-weight: bold;
   margin-left: 85%;
-  /* right: 0; */
-  /* background-color: yellow; */
+  color: white;
   width: 100%;
+  cursor: pointer;
 }
 
-.openbtn {
+.hamburger-icon {
   cursor: pointer;
   font-size: 2rem;
   margin: 1.5rem 1rem;
   position: fixed;
   top: 0;
   width: 1.75rem;
+  background-color: yellow;
 }
 
-.currentpage {
-  color: lightseagreen;
-}
-
-@media screen and (min-width: 48rem) {
-  body {
-    background-color: white;
-  }
-
-  .desktop {
-    display: block;
-  }
-
-  .mobile {
-    display: none;
-  }
-
-  header {
-    background-color: lightseagreen;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5rem;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: end;
-  }
-
-  header a:hover {
-    color: white;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: end;
-  }
-
-  header h1 {
-    text-align: left;
-    margin: 0;
-    padding: 1rem 0 1rem 1rem;
-  }
-
-  nav ul {
-    padding: 1rem;
-  }
-
-  nav ul li {
-    margin: 0 0.5rem;
-  }
-
-  nav ul li a {
-    font-size: 1.2rem;
-  }
-
-  .currentpage {
-    color: white;
-  }
-}
 
 /* MAIN */
-main, footer  {
-  transition: margin-left .5s;
-  padding: 3.75rem;
-}
-
 main {
   position: relative;
-  top: 5rem
+  top: 5rem;
+  transition: margin-left .5s;
+  padding: 3.75rem;
 }
 
 .profile-picture {
@@ -192,22 +140,74 @@ main {
   margin: 1rem auto;
 }
 
-h2 {
-  font-size: 2.4rem;
-}
-
-#about article {
+main article {
   margin: 1rem 0;
 }
 
+/* FOOTER */
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 3.75rem;
+}
+
+.footer-icons {
+  width: 5rem;
+}
+
+/* Desktop styling */
 @media screen and (min-width: 48rem) {
+  /* ROOT FONT STYLES */
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  /* Header */
+  header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: end;
+  }
+
+  header h1 {
+    text-align: left;
+    margin: 0;
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+  }
+
+  nav ul li {
+    margin: 0 0.5rem;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  /* Main */
   main {
     position: relative;
     top: 3rem;
     width: 96%;
   }
 
-  #about {
+  main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 2rem 0;
@@ -220,47 +220,10 @@ h2 {
   main p {
     font-size: 1.125rem;
   }
-}
 
-/* FOOTER */
-footer {
-  position: relative;
-  top: 3rem
-}
-
-footer h2 {
-  text-align: left;
-  margin-top: 1rem;
-}
-
-h3 {
-  text-align: left;
-  font-size: 1.5rem;
-}
-
-h3, .copyright {
-  margin: 1rem 0;
-}
-
-.social-media-icons {
-  width: 3rem;
-  margin-right: 1rem;
-}
-
-.social-media-icons-container {
-  display: flex;
-}
-
-@media screen and (min-width: 48rem) {
+  /* Footer */
   footer {
     position: relative;
     top: 3rem;
-    width: 96%;
-    padding-bottom: 1rem;
-  }
-
-  .contact-me {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
   }
 }

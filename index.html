@@ -11,30 +11,28 @@
 </head>
 <body>
   <header>
-    <nav class="mobile">
-      <div class="sidenav" id="sideNavWidth">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#" class="currentpage">Home</a>
+    <h1><a href="#">Kanyisa Ntombini</a></h1>
+
+    <nav class="mobile side-nav" id="sideNavWidth">
+        <div class="hamburger-icon" id="hamburgerIcon" onclick="openNav()">&#9776;</div>
+        <div class="cross-icon" onclick="closeNav()">&times;</div>
+
+        <a href="#">Home</a>
         <a href="./resources/pages/skills.html">Skills</a>
         <a href="./resources/pages/projects.html">Projects</a>
         <a href="./resources/pages/contact.html">Contact</a>
-        <div class="openbtn" onclick="openNav()">&#9776;</div>
-      </div>
-      <!-- <div class="openbtn" onclick="openNav()">&#9776;</div> -->
     </nav>
-    <h1><a href="#">Kanyisa Ntombini</a></h1>
+    
     <nav class="desktop">
       <ul>
         <li><a href="./resources/pages/skills.html">Skills</a></li>
         <li><a href="./resources/pages/projects.html">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="./resources/pages/contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
-
-  <hr class="mobile">
   
-  <main id="about">
+  <main>
     <figure class="profile-picture-container">
       <img class="profile-picture" src="./resources/images/professional-pic.jpg" alt="A smiling black woman wearing a black shirt with short hair">
     </figure>
@@ -52,10 +50,9 @@
   </main>
 
   <footer>
-      <section class="copyright">
-        <p>&copy; 2022 By Kanyisa Ntombini<p>
-      </section>
-    </div>
+    <a href="https://github.com/Kanyisa-Ntombini" target="_blank"><img class="footer-icons" src="./resources/images/github.png" alt="github icon"></a>
+    <a href="https://www.linkedin.com/in/kanyisa-ntombini/" target="_blank"><img class="footer-icons" src="./resources/images/linkedin.webp" alt="linked in icon"></a>
+    <p>&copy; 2022 By Kanyisa Ntombini<p></p>
   </footer>
 </body>
 </html>
