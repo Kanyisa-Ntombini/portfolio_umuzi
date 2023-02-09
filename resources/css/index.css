@@ -59,13 +59,11 @@ img {
 /* HTML ELEMENTS FOR HEADER */
 header {
   background-color: lightseagreen;
-  position: relative;
-  top: 5rem;
 }
 
 header h1 {
   font-size: 2.9rem;
-  margin-bottom: 1rem;
+  padding: 1rem 0;
 }
 
 header a {
@@ -96,7 +94,7 @@ header a:hover {
   font-weight: 700;
   display: block;
   transition: 0.3s;
-  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
   text-decoration: none;
   font-size: 1.5rem;
 }
@@ -114,20 +112,16 @@ header a:hover {
 .hamburger-icon {
   cursor: pointer;
   font-size: 2rem;
-  margin: 1.5rem 1rem;
+  margin: 1.5rem;
   position: fixed;
   top: 0;
   width: 1.75rem;
-  background-color: yellow;
 }
 
 
 /* MAIN */
 main {
-  position: relative;
-  top: 5rem;
-  transition: margin-left .5s;
-  padding: 3.75rem;
+  margin: 0 1.5rem;
 }
 
 .profile-picture {
@@ -149,11 +143,12 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
-  padding: 3.75rem;
+  padding: 1.5rem;
+  background-color: lightseagreen;
 }
 
 .footer-icons {
-  width: 5rem;
+  width: 3rem;
 }
 
 /* Desktop styling */
