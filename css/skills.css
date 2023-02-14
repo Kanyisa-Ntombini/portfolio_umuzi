@@ -1,0 +1,34 @@
+main h2 {
+  margin-top: 2rem;
+}
+
+main h3 {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.programming-icons-container {
+  display: flex;
+  justify-content: space-around;
+} 
+
+figure {
+  width: 3em;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 1rem;
+}
+
+main hr {
+  margin-top: 2rem;
+}
+
+
+@media screen and (min-width: 768px) {
+  figure {
+    width: 6rem;   
+  }
+}
