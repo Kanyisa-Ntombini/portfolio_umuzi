@@ -32,15 +32,35 @@ figcaption {
 
 @media screen and (min-width: 48rem){
   p {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    text-align: justify;
   }
-  figure img, iframe {
+
+  figure, .project-box p, .chatbot-explanation {
     width: 25rem;
     height: 25rem;
   }
 
-  /* main div {
-    width: 50%;
-    margin: 0 auto;
+  figure {
+    margin: 0rem;
+  }
+
+  .project-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-box figure, .chatbot-explanation {
+    margin-left: 20rem;
+  }
+
+  #chatbot-prototype {
+    margin: 0;
+  }
+  /* figure {
+    background-color: yellow;
+  }
+  .project-box p {
+    background-color: aqua;
   } */
 }
