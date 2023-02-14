@@ -1,0 +1,52 @@
+#about {
+   margin: 1rem;
+}
+
+#about h2 {
+   /* font-size: 2.5rem; */
+   /* text-align: center; */
+   margin: 1.5rem 0;
+}
+
+#about p {
+   text-align: justify;
+   margin: 1rem 0;
+}
+ 
+.profile-picture {
+   border: 0.2rem solid black;
+   border-radius: 50%;
+}
+ 
+.profile-picture-container {
+   width: 75%;
+   margin: 0rem auto;
+}
+
+/* Tablet styling */
+@media screen and  (max-width: 768px) and (min-width: 426px) {
+   #about {
+      margin: 1.5rem;
+    }
+  
+    #about p {
+      font-size: 1.25rem;
+    }
+}
+
+/* Desktop styling */
+@media screen and (min-width: 769px) {
+   main {
+      position: relative;
+      top: 6.5rem;
+    }
+  
+    #about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    #about p {
+      font-size: 1.25rem;
+    }
+}

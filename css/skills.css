@@ -1,4 +1,42 @@
-h2 {
+#skills {
+  background-color: lightseagreen;
+  padding: 1rem;
+}
+
+#skills h3 {
+  margin: 1.5rem 0;
+}
+
+#skills section {
+  display: flex;
+  justify-content: space-around;
+} 
+
+#skills figure {
+  width: 3em;
+  margin-bottom: 1rem;
+}
+
+#skills figcaption {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 1rem;
+}
+/* Desktop styling */
+@media screen and (min-width: 769px) {
+  #skills h3 {
+    font-size: 1.75rem;
+  }
+
+  #skills figure {
+    width: 5rem;   
+  }
+
+  #skills figcaption {
+    font-size: 1.25em;
+  }
+}
+/* h2 {
   font-size: 2.5rem;
 }
 
@@ -8,23 +46,14 @@ h3 {
   text-align: center;
 }
 
-main section {
-  display: flex;
-  justify-content: space-around;
-} 
 
-figure {
-  width: 3em;
-}
 
-figcaption {
-  text-align: center;
-  font-size: 0.9em;
-  margin-top: 1rem;
-}
+
+
+
 
 /* Tablet styling */
-@media screen and  (max-width: 768px) and (min-width: 426px) {
+/*@media screen and  (max-width: 768px) and (min-width: 426px) {
   h2 {
     font-size: 3rem;
   }
@@ -38,4 +67,4 @@ figcaption {
   figure {
     width: 6rem;   
   }
-}
+} */
