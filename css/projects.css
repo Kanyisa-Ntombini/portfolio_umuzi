@@ -1,17 +1,24 @@
-h2 {
-  font-size: 3rem;
+#projects {
+  margin: 1rem;
 }
 
-main h3 {
+#projects h3 {
+  margin: 1.5rem 0;
+}
+
+#projects img, iframe {
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem auto;
+}
+
+#projects figcaption {
   text-align: center;
-  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-.paragraph-separator {
-  font-weight: 900; 
-  text-align: center; 
-  font-size: 32px;
+#projects p {
+  text-align: justify;
 }
 
 iframe {
@@ -19,48 +26,29 @@ iframe {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-figure img, iframe {
-  width: 20rem;
-  height: 20rem;
-  margin: 1rem auto;
+.paragraph-separator {
+  font-weight: 900; 
+  text-align: center; 
+  font-size: 1.5rem;
 }
 
-figcaption {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-@media screen and (min-width: 48rem){
-  p {
-    font-size: 1.3rem;
-    text-align: justify;
+/* Desktop styling */
+@media screen and (min-width: 769px) {
+  #projects h2 {
+    margin-top: 1rem;
   }
 
-  figure, .project-box p, .chatbot-explanation {
+  #projects img, iframe {
+    width: 100%;
+  }
+  #projects section{
     width: 25rem;
     height: 25rem;
   }
 
-  figure {
-    margin: 0rem;
-  }
-
-  .project-box {
+  #projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
   }
-
-  .project-box figure, .chatbot-explanation {
-    margin-left: 20rem;
-  }
-
-  #chatbot-prototype {
-    margin: 0;
-  }
-  /* figure {
-    background-color: yellow;
-  }
-  .project-box p {
-    background-color: aqua;
-  } */
 }
