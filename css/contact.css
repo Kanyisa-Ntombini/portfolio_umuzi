@@ -1,0 +1,33 @@
+#contact {
+   background-color: lightseagreen;
+   padding: 1rem;
+}
+
+#contact h3 {
+   text-align: left;
+   margin: 1rem 0;
+}
+
+#contact h2 {
+   margin: 1rem 0;
+}
+
+#contact section {
+   margin: 1rem 0;
+}
+
+.social-media-icons-container {
+   display: flex;
+}
+
+.social-media-icons-container img {
+   width: 4rem;
+   margin-right: 1rem;
+}
+
+@media screen and (min-width: 769px) {
+   .contact-me {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
