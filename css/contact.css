@@ -1,0 +1,31 @@
+#contact {
+   background-color: lightseagreen;
+   padding: 0 1rem;
+}
+
+#contact h2 {
+   padding: 1rem 0;
+   text-align: left;
+}
+
+#contact h3 {
+   text-align: left;
+   margin: 1rem 0;
+}
+
+.contact-containers {
+   padding: 1.5rem 0;
+}
+
+.social-media {
+   display: flex;
+}
+
+.social-media-icons {
+   width: 4rem;
+   margin-right: 1rem;
+}
+
+@media screen and (min-width: 769px) {
+   
+}

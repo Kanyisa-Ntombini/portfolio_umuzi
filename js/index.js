@@ -1,5 +1,6 @@
 const hamburgerIcon = document.getElementById('hamburgerIcon');
 const sideNavWidth = document.getElementById('sideNavWidth');
+const happy = document.getElementById('happy');
 
 const openNav = () => {
   sideNavWidth.style.width = '100%';

@@ -1,0 +1,46 @@
+#projects {
+  margin: 1rem;
+}
+
+#projects h3 {
+  margin: 1.5rem 0;
+}
+
+#projects img, iframe {
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem auto;
+}
+
+#projects figcaption {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#projects p {
+  text-align: justify;
+}
+
+iframe {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.paragraph-separator {
+  font-weight: 900; 
+  font-size: 1.5rem;
+  width: 5rem;
+  margin: 2rem auto;
+}
+
+/* Desktop styling */
+@media screen and (min-width: 769px) {
+  #projects h2 {
+    margin-top: 1rem;
+  }
+
+  #projects p {
+    font-size: 1.25rem;
+  }
+
+}
