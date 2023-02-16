@@ -27,7 +27,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }*
 
 h1, h2, h3 {
@@ -143,15 +143,9 @@ header h1 a:hover{
   } 
 
   #main-page {
-    background-color: lightpink;
     height: 100vh;
   }
   
-  #second-page {
-    background-color: lightblue;
-    height: 100vh;
-  }
-
   header {
     /* background-color: red; */
     position: fixed;

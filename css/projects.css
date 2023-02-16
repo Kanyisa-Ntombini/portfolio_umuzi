@@ -28,8 +28,9 @@ iframe {
 
 .paragraph-separator {
   font-weight: 900; 
-  text-align: center; 
   font-size: 1.5rem;
+  width: 5rem;
+  margin: 2rem auto;
 }
 
 /* Desktop styling */
@@ -38,17 +39,8 @@ iframe {
     margin-top: 1rem;
   }
 
-  #projects img, iframe {
-    width: 100%;
-  }
-  #projects section{
-    width: 25rem;
-    height: 25rem;
+  #projects p {
+    font-size: 1.25rem;
   }
 
-  #projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
-  }
 }
