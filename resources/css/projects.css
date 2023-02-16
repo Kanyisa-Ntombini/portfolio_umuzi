@@ -1,10 +1,17 @@
 h2 {
-  margin-top: 2rem;
+  font-size: 3rem;
 }
 
 main h3 {
   text-align: center;
-  margin: 1.5rem 0;;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.paragraph-separator {
+  font-weight: 900; 
+  text-align: center; 
+  font-size: 32px;
 }
 
 iframe {
@@ -23,13 +30,37 @@ figcaption {
   margin-bottom: 1rem;
 }
 
-footer hr {
-  margin-top: 1rem;
-}
-
 @media screen and (min-width: 48rem){
-  figure img, iframe {
-    width: 30rem;
-    height: 30rem;
+  p {
+    font-size: 1.3rem;
+    text-align: justify;
   }
+
+  figure, .project-box p, .chatbot-explanation {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  figure {
+    margin: 0rem;
+  }
+
+  .project-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-box figure, .chatbot-explanation {
+    margin-left: 20rem;
+  }
+
+  #chatbot-prototype {
+    margin: 0;
+  }
+  /* figure {
+    background-color: yellow;
+  }
+  .project-box p {
+    background-color: aqua;
+  } */
 }

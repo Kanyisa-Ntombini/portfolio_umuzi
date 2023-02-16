@@ -1,7 +1,12 @@
+const hamburgerIcon = document.getElementById('hamburgerIcon');
+const sideNavWidth = document.getElementById('sideNavWidth');
+
 const openNav = () => {
-  document.getElementById("sideNavWidth").style.width = "14rem";
-}
+  sideNavWidth.style.width = '100%';
+  hamburgerIcon.style.display = 'none';
+};
 
 const closeNav = () => {
-  document.getElementById("sideNavWidth").style.width = "0rem";
-}
+  sideNavWidth.style.width = 0;
+  hamburgerIcon.style.display = 'block';
+};
