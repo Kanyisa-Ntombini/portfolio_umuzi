@@ -45,7 +45,7 @@ p {
 
 a:hover {
   cursor: pointer;
-  color: lightseagreen;
+  color: #FFAEBC;
 }
 
 img {
@@ -95,7 +95,7 @@ header h1 a:hover{
 }
 
 .side-nav a:hover {
-  color: lightseagreen;
+  color: #FFAEBC;
 }
 
 .cross-icon {
@@ -177,7 +177,6 @@ header h1 a:hover{
 
   nav ul li:last-child {
     margin: 0;
-    /* padding-right: 1rem; */
   }
 
   nav ul li a {
