@@ -117,6 +117,14 @@ header h1 a:hover{
   width: 1.75rem;
 }
 
+footer {
+  padding: 1rem;
+}
+
+footer p {
+  color: #61ff91;;
+}
+
 /* Tablet styling */
 @media screen and  (max-width: 768px) and (min-width: 426px) {
   /* Header */
@@ -186,4 +194,9 @@ header h1 a:hover{
   nav ul li a:hover {
     color: white;
   } 
+
+  .something {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 } 
