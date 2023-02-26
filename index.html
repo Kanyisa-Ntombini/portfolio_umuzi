@@ -7,35 +7,34 @@
    <link rel="stylesheet" href="./css/reset.css">
    <link rel="stylesheet" href="./css/index.css">
    <link rel="stylesheet" href="./css/about.css">
-   <link rel="stylesheet" href="./css/skills.css">
-   <link rel="stylesheet" href="./css/projects.css">
-   <link rel="stylesheet" href="./css/contact.css">
    <script src="./js/index.js" async></script>
    <title>Kanyisa Ntombini Portfolio</title>
 </head>
 <body>
+   <header>
+      <h1><a href="#">Kanyisa Ntombini</a></h1>
+
+      <nav class="mobile side-nav" id="sideNavWidth">
+         <div class="hamburger-icon" id="hamburgerIcon" onclick="openNav()">&#9776;</div>
+         <div class="cross-icon" onclick="closeNav()">&times;</div>
+ 
+         <a href="#" class="current-page">Home</a>
+           <a href="./pages/skills.html">Skills</a>
+           <a href="./pages/projects.html">Projects</a>
+           <a href="./pages/contact.html">Contact</a>
+      </nav>
+
+      <nav class="desktop">
+         <ul>
+           <li><a href="./pages/skills.html">Skills</a></li>
+           <li><a href="./pages/projects.html">Projects</a></li>
+           <li><a href="./pages/contact.html">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+
    <div id="main-page">
-      <header>
-         <h1><a href="#">Kanyisa Ntombini</a></h1>
-
-         <nav class="mobile side-nav" id="sideNavWidth">
-            <div class="hamburger-icon" id="hamburgerIcon" onclick="openNav()">&#9776;</div>
-            <div class="cross-icon" onclick="closeNav()">&times;</div>
-    
-            <a href="#">Home</a>
-              <a href="#skills">Skills</a>
-              <a href="#projects">Projects</a>
-              <a href="#contact">Contact</a>
-         </nav>
-
-         <nav class="desktop">
-            <ul>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-         </nav>
-      </header>
+      
 
       <div id="about">
          <figure class="profile-picture-container">
