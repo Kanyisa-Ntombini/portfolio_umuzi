@@ -8,17 +8,17 @@
    <link rel="stylesheet" href="../css/index.css">
    <link rel="stylesheet" href="../css/contact.css">
    <script src="../js/index.js" async></script>
-   <title>Kanyisa Ntombini Portfolio</title>
+   <title>Kanyisa Ntombini - Contact</title>
 </head>
 <body>
    <header>
-      <h1><a href="#">Kanyisa Ntombini</a></h1>
+      <h1><a href="../index.html">Kanyisa Ntombini</a></h1>
 
       <nav class="mobile side-nav" id="sideNavWidth">
          <div class="hamburger-icon" id="hamburgerIcon" onclick="openNav()">&#9776;</div>
          <div class="cross-icon" onclick="closeNav()">&times;</div>
  
-         <a href="#">Home</a>
+         <a href="../index.html">Home</a>
            <a href="./skills.html">Skills</a>
            <a href="./projects.html">Projects</a>
            <a href="#" class="current-page">Contact</a>
@@ -33,27 +33,43 @@
       </nav>
    </header>
 
-   <div id="contact">
-      <h2>Contact</h2>
+   <main id="contact">
+      <h2>Contact me!</h2>
+      <p>Feel free to send me an email at <span>kanyisa.ntombini@gmail.com.</span></p>
 
-      <div class="something">
-         <div class="contact-containers">
-            <h3>Email</h3>
-            <p>kanyisa.ntombini@gmail.com</p>
-         </div>
-   
-         <div class="contact-containers">
-            <h3>Follow me</h3>
-            <div class="social-media">
-               <a href="https://github.com/Kanyisa-Ntombini" target="_blank"><img class="social-media-icons" src="../images/github.png" alt="github icon"></a>
-               <a href="https://www.linkedin.com/in/kanyisa-ntombini/" target="_blank"><img class="social-media-icons" src="../images/linkedin.webp" alt="linkedin icon"></a>
-            </div>
-         </div>
-      </div>
-   </div>
+      <form action="" method="post" id="contactForm">
+         <h3>Alternatively please fill in this form!</h3>
+
+         <label for="fullName">
+            Name
+            <input type="text" name="fullName" id="fullName" placeholder="Jane Doe" maxlength="50" required>
+         </label>
+
+         <label for="emailAddress">
+             Email Address
+            <input type="email" name="emailAddress" id="emailAddress" placeholder="jane.doe@example.com" maxlength="50" required>
+         </label>
+
+         <label for="message">
+            Message
+            <textarea name="mess" id="message" cols="30" rows="10" placeholder="Hello there!" maxlength="500" required></textarea>
+         </label>
+
+         <input type="submit" name="submit" id="submit" value="submit">
+      </form>
+   </main>
 
    <footer>
-      <p>&copy; 2022 By Kanyisa Ntombini<p></p>
+      <h3>Follow me on social media!</h3>
+      <section class="social-media">
+         <div>
+            <a href="https://github.com/Kanyisa-Ntombini" target="_blank"><img class="social-media-icons" src="../images/github.png" alt="github icon"></a>
+         </div>
+         <div>
+            <a href="https://www.linkedin.com/in/kanyisa-ntombini/" target="_blank"><img class="social-media-icons" src="../images/linkedin.webp" alt="linkedin icon"></a>
+         </div>
+      </section>
+      <p>&copy; 2023 By Kanyisa Ntombini</p>
    </footer>
 </body>
 </html>

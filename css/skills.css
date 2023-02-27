@@ -1,27 +1,23 @@
-#skills {
-  background-color: #A0E7E5;
-  padding: 1rem;
-}
-
 #skills h3 {
-  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  margin: 2rem 0;
 }
 
-#skills div {
+.flex-skills-images {
   display: flex;
   justify-content: space-around;
-} 
+}
 
 #skills figure {
-  width: 3em;
-  margin-bottom: 1rem;
+  width: 2.3em;
 }
 
 #skills figcaption {
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.7rem;
   margin-top: 1rem;
 }
+
 /* Desktop styling */
 @media screen and (min-width: 769px) {
   #skills h3 {
