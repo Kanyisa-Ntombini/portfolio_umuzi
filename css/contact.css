@@ -2,14 +2,19 @@ form {
    border: 0.2rem solid #A0E7E5;
    background-color: #A0E7E5;
    border-radius: 1rem;
-   padding: 1rem;
-   margin: 1rem 0;
+   padding: 1rem 1rem 0;
+   margin: 1rem auto;
+   width: 96%;
 }
 
 input, textarea {
    width: 100%;
    display: block;
    margin: 1rem 0;
+}
+
+input {
+   height: 2rem;
 }
 
 span {
@@ -26,39 +31,37 @@ span {
   text-align: left;
 }
 
+#contact p {
+   text-align: center;
+}
+
+/* Desktop styling */
+@media screen and (min-width: 426px) {
+   form {
+      width: 50%;
+   }
+}
+
 /* Desktop styling */
 @media screen and (min-width: 769px) {
+   #contact h3 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+
+    #contact p {
+      font-size: 1.2rem;
+    }
+
    form {
       width: 30%;
    }
    input {
-      height: 2.5rem;
+      height: 2rem;
+   }
+
+   input, textarea {
+      margin-bottom: 2rem;
    }
 }
-/* #contact {
-   background-color: #B4F8C8;
-   padding: 0 1rem;
-}
-
-#contact h2 {
-   padding: 1rem 0;
-   text-align: left;
-}
-
-#contact h3 {
-   text-align: left;
-   margin: 1rem 0;
-}
-
-.contact-containers {
-   padding: 1.5rem 0;
-}
-
-.social-media {
-   display: flex;
-}
-
-.social-media-icons {
-   width: 4rem;
-   margin-right: 1rem;
-} */
