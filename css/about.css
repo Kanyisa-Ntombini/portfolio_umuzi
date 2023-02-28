@@ -38,11 +38,4 @@
       margin: 0rem auto;
       width: 50%;
    }
-
-   footer {
-      position: absolute;
-      bottom: 0;
-      top: auto;
-      width: 100%;
-   }
 }
