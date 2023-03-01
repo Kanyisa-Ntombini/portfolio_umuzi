@@ -223,7 +223,8 @@ footer img {
 
   /* Footer */
   footer {
-    position: relative;
-    top: 6.5rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 } 
