@@ -19,7 +19,7 @@
 }
 
 /* Desktop styling */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 48.0625rem) {
   #skills h3 {
     font-size: 1.75rem;
   }

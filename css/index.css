@@ -153,7 +153,7 @@ footer img {
 }
 
 /* Tablet styling */
-@media screen and  (max-width: 768px) and (min-width: 426px) {
+@media screen and (min-width: 26.625rem) {
   /* Header */
   h1 {
     font-size: 4rem;
@@ -168,7 +168,7 @@ footer img {
 }
 
 /* Desktop styling */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 48.0625rem) {
   .desktop {
     display: block;
   }

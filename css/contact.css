@@ -36,14 +36,14 @@ span {
 }
 
 /* Desktop styling */
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 26.625rem) {
    form {
       width: 50%;
    }
 }
 
 /* Desktop styling */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 48.0625rem) {
    #contact h3 {
       font-size: 1.5rem;
       margin-bottom: 2rem;

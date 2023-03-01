@@ -32,15 +32,8 @@ iframe {
   margin: 2rem 0;
 }
 
-/* Tablet styling */
-/* @media screen and (min-width: 426px) {
-  #projects p {
-    font-size: 1rem;
-  }
-} */
-
-/* Desktop styling */
-@media screen and (min-width: 426px) {
+/* Desktop and tablet styling */
+@media screen and (min-width: 26.625rem) {
   #projects h2 {
     font-size: 3.5rem;
     margin-top: 1rem;

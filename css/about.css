@@ -15,14 +15,14 @@
 }
 
 /* Tablet styling */
-@media screen and  (max-width: 768px) and (min-width: 426px) {
+@media screen and (min-width: 26.625rem) {
     #about p {
       font-size: 1.25rem;
     }
 }
 
 /* Desktop styling */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 48.0625rem) {
     #about {
       display: grid;
       grid-template-columns: 1fr 1fr;
