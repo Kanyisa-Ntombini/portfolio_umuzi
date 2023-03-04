@@ -7,16 +7,23 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
 .mobile {
   display: block;
 }
 
 .desktop {
   display: none;
-}
-
-body {
-  font-size: 16px;
 }
 
 h1 {
@@ -217,14 +224,12 @@ footer img {
 
   /* Main */
   main {
-    position: relative;
-    top: 6.5rem;
+    margin-top: 9rem;
   }
 
   /* Footer */
   footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 } 
