@@ -168,36 +168,31 @@ main {
 
 /* Projects */
 #projects h3 {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin: 2rem;
 }
 
 iframe {
   display: block;
-  /* border: 1px solid rgba(0, 0, 0, 0.1); */
-  width: 100%;
-  height: 100%;
+  width: 17rem;
+  height: 17rem;
   margin-bottom: 1rem;
 }
 
-#projects figure {
-  width: 50%;
-  height: 50%;
+#projects img {
+  width: 17rem;
+  height: 17rem;
   margin: 0 auto;
-}
-
-#projects figcaption {
-  font-size: 0.75rem;
-  /* text-align: center; */
-  margin: 1rem 0;
 }
 
 #projects p {
   text-align: justify;
-  font-size: 0.75rem;
+  /* font-size: 0.75rem; */
 }
 
 /* Footer */
+#contact h2 {
+  margin: 2rem 0;
+}
 #contact img {
   width: 3rem;
   margin-right: 1rem;
@@ -331,31 +326,40 @@ iframe {
 
   #skills figcaption {
     font-size: 1.25em;
+    text-align: center;
   }
 
   /* Projects */
-  #projects h2 {
+  /* #projects h2 {
     font-size: 3.5rem;
     margin-top: 1rem;
-  }
+  } */
 
-  #projects h3 {
+  /* #projects h3 {
     font-size: 2rem;
     margin: 2rem 0;
-  }
+  } */
 
-  #projects p {
+  /* #projects p {
     font-size: 1.25rem;
-  }
+  } */
 
-  #projects figure {
-    width: 100%;
-    height: 100%;
+  #projects img, iframe {
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem auto;
+    padding: 0;
+    background-color: lightblue;
   } 
 
   .project-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
+  }
+
+  .project-container section {
+    width: 25rem;
+    height: 40rem;
   }
 } 
