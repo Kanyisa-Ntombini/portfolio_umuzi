@@ -154,7 +154,7 @@ main {
 
 /* Skills */
 #skills h2 {
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -176,7 +176,7 @@ main {
 
 /* Projects */
 #projects h2 {
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -202,8 +202,12 @@ iframe {
 }
 
 /* Contact */
+#contact {
+  padding-bottom: 2rem;
+}
+
 #contact h2 {
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -226,7 +230,7 @@ iframe {
 }
 
 /* Tablet styling */
-@media screen and (min-width: 26.625rem) {
+@media screen and (min-width: 48rem) {
   /* Header */
   h1 {
     font-size: 4rem;
@@ -265,7 +269,7 @@ iframe {
 }
 
 /* Desktop styling */
-@media screen and (min-width: 48.0625rem) {
+@media screen and (min-width: 64rem) {
   .desktop {
     display: block;
   }
@@ -316,12 +320,6 @@ iframe {
   /* Main */
   main {
     margin-top: 11.5rem;
-  }
-
-  /* Footer */
-  footer {
-    grid-row-start: 2;
-    grid-row-end: 3;
   }
 
   /* About */
