@@ -7,16 +7,23 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
 .mobile {
   display: block;
 }
 
 .desktop {
   display: none;
-}
-
-body {
-  font-size: 16px;
 }
 
 h1 {
@@ -299,38 +306,13 @@ iframe {
 
   /* Main */
   main {
-    position: relative;
-    top: 7.5rem;
+    margin-top: 9rem;
   }
 
-  /* About */
-  #about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  #about h2 {
-    font-size: 3.5rem;
-    margin: 1.5rem 0;
- }
- 
- #about p {
-    text-align: justify;
-    margin: 1rem 0;
- }
-
- #about img {
-  width: 50%;
- }
-
-  /* Skills */
-  #skills figure {
-    width: 5rem;   
-  }
-
-  #skills figcaption {
-    font-size: 1.25em;
-    text-align: center;
+  /* Footer */
+  footer {
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 
   /* Projects */
