@@ -13,9 +13,6 @@ html {
 
 body {
   font-size: 16px;
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto;
 }
 
 .mobile {
@@ -135,7 +132,7 @@ header h1 a:hover{
 
 /* Main */
 main {
-  margin: 1.5rem;
+  margin: 2rem 1.5rem;
 }
 
 /* About */
@@ -172,9 +169,9 @@ main {
 }
 
 #skills div {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /* Projects */
@@ -253,6 +250,18 @@ iframe {
   #about img {
     width: 50%;
   }
+
+  /* Projects */
+  #projects img, iframe {
+    display: block;
+    width: 25rem;
+    height: 25rem;
+    margin: 1rem auto;
+  }
+
+  #projects p {
+    width: 25rem;
+  }
 }
 
 /* Desktop styling */
@@ -306,7 +315,7 @@ iframe {
 
   /* Main */
   main {
-    margin-top: 9rem;
+    margin-top: 11.5rem;
   }
 
   /* Footer */
@@ -321,15 +330,41 @@ iframe {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  #about h2 {
+    margin: 0;
+  }
+
+  /* Skills */
+  #skills div {
+    /* display: flex; */
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  #skills figure {
+    width: 5em;
+    margin: 0;
+    padding: 0;
+  }
+
+  #skills img {
+    margin-right: 1rem;
+    padding: 0;
+  }
+
+  #skills h2 {
+    margin-bottom: 3rem;
+  }
+
   /* Projects */
   .project-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
   }
   
   #projects img, iframe, #projects p {
-    width: 20rem;
+    width: 25rem;
+    height: 25rem;
     margin: 1rem auto;
   } 
 } 
