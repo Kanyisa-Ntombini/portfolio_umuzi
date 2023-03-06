@@ -55,6 +55,14 @@ img {
   height: auto;
 }
 
+span {
+  color: #A0E7E5;
+}
+
+.center {
+  text-align: center;
+}
+
 /* HEADER */
 header {
   background-color: #FFAEBC;
@@ -99,10 +107,6 @@ header h1 a:hover{
   color: #FFAEBC;
 }
 
-.current-page {
-  color: white;
-}
-
 .cross-icon {
   position: relative;
   font-size: 2.5rem;
@@ -137,7 +141,7 @@ main {
   margin: 1rem 0;
 }
 
-.profile-picture {
+#about img {
   border: 0.2rem solid #FFAEBC;
   border-radius: 50%;
   margin: 0rem auto;
@@ -146,12 +150,12 @@ main {
 
 /* Skills */
 #skills h2 {
-  margin: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 #skills figure {
   width: 2.3em;
-  margin: 0rem 1.5rem 1.5rem 0;
 }
 
 #skills figcaption {
@@ -161,24 +165,23 @@ main {
 }
 
 #skills div {
-  display: flex;
-  justify-content:space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center
 }
 
 /* Projects */
+#projects h2 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
 #projects h3 {
   margin: 2rem;
 }
 
-iframe {
+#projects img, iframe {
   display: block;
-  width: 17rem;
-  height: 17rem;
-  margin-bottom: 1rem;
-}
-
-#projects img {
   width: 17rem;
   height: 17rem;
   margin: 0 auto;
@@ -186,16 +189,31 @@ iframe {
 
 #projects p {
   text-align: justify;
-  /* font-size: 0.75rem; */
+  width: 17rem;
+  margin: 1rem auto;
 }
 
-/* Footer */
-#contact h2 {
-  margin: 2rem 0;
+iframe {
+  border: 1px solid rgba(0, 0, 0);
 }
+
+/* Contact */
+#contact h2 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+#contact h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 #contact img {
   width: 3rem;
+  padding: 0;
+  margin: 0;
   margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .social-media {
@@ -225,8 +243,8 @@ iframe {
     font-size: 1.25rem;
   }
 
-  .profile-picture {
-    width: 75%;
+  #about img {
+    width: 50%;
   }
 }
 
@@ -286,6 +304,11 @@ iframe {
   }
 
   /* About */
+  #about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   #about h2 {
     font-size: 3.5rem;
     margin: 1.5rem 0;
@@ -295,29 +318,10 @@ iframe {
     text-align: justify;
     margin: 1rem 0;
  }
-  
- .profile-picture {
-    border: 0.2rem solid #FFAEBC;
-    border-radius: 50%;
-    margin: 0rem auto;
-    width: 75%;
- }
 
- #about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-#about p {
-  font-size: 1.25rem;
-}
-
-.profile-picture {
-  border: 0.2rem solid #FFAEBC;
-  border-radius: 50%;
-  margin: 0rem auto;
+ #about img {
   width: 50%;
-}
+ }
 
   /* Skills */
   #skills figure {
@@ -330,36 +334,14 @@ iframe {
   }
 
   /* Projects */
-  /* #projects h2 {
-    font-size: 3.5rem;
-    margin-top: 1rem;
-  } */
-
-  /* #projects h3 {
-    font-size: 2rem;
-    margin: 2rem 0;
-  } */
-
-  /* #projects p {
-    font-size: 1.25rem;
-  } */
-
-  #projects img, iframe {
-    width: 20rem;
-    height: 20rem;
-    margin: 1rem auto;
-    padding: 0;
-    background-color: lightblue;
-  } 
-
-  .project-container {
+  /* .project-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
   }
-
-  .project-container section {
-    width: 25rem;
-    height: 40rem;
-  }
+  
+  #projects img, iframe, #projects p {
+    width: 20rem;
+    margin: 1rem auto;
+  }  */
 } 
