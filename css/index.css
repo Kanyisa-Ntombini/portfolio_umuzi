@@ -315,8 +315,14 @@ iframe {
     grid-row-end: 3;
   }
 
+  /* About */
+  #about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   /* Projects */
-  /* .project-container {
+  .project-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
@@ -325,5 +331,5 @@ iframe {
   #projects img, iframe, #projects p {
     width: 20rem;
     margin: 1rem auto;
-  }  */
+  } 
 } 
