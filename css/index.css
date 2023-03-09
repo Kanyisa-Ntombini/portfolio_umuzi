@@ -166,21 +166,14 @@ main {
 }
 
 /* Projects */
-#projects img, iframe {
-  display: block;
-  width: 17rem;
-  height: 17rem;
-  margin: 0 auto;
+#projects img {
+  border: 0.2rem solid black;
+  border-radius: 1rem;
 }
 
 #projects p {
   text-align: justify;
-  width: 17rem;
-  margin: 1rem auto;
-}
-
-iframe {
-  border: 1px solid rgba(0, 0, 0);
+  margin: 1rem 0;
 }
 
 /* Contact */
@@ -284,15 +277,9 @@ iframe {
   }
 
   /* Projects */
-  #projects img, iframe {
-    display: block;
-    width: 25rem;
-    height: 25rem;
+  #projects img, #projects p {
+    width: 50%;
     margin: 1rem auto;
-  }
-
-  #projects p {
-    width: 25rem;
   }
 }
 
@@ -370,11 +357,6 @@ iframe {
   }
 
   /* Skills */
-  #skills div {
-    width: 90%;
-    margin: 0 auto;
-  }
-
   #skills figure {
     width: 5em;
     margin: 0;
@@ -388,25 +370,15 @@ iframe {
 
   /* Projects */
   .project-container {
-    display: flex;
-    width: 96%;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   #projects h3 {
     margin-top: 0;
   }
-  
-  #projects img, iframe {
-    width: 18rem;
-    height: 18rem;
-  } 
 
-  #projects p {
-    width: 18rem;
-  }
-
-  iframe {
-    height: 18rem;
+  #projects img, #projects p {
+    width: 75%;
   }
 } 
