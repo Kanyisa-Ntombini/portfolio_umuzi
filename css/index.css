@@ -196,6 +196,7 @@ main {
 .social-media {
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 /* Small phone more than 320px and less than 768px*/
