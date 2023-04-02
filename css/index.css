@@ -52,6 +52,10 @@ p {
   line-height: 1.8;
 }
 
+figcaption {
+  font-size: 0.7rem;
+}
+
 a:hover {
   cursor: pointer;
   color: #FFAEBC;
@@ -156,7 +160,6 @@ main {
 
 #skills figcaption {
   text-align: center;
-  font-size: 0.7rem;
   margin-top: 1rem;
 }
 
@@ -271,9 +274,25 @@ main {
     font-size: 1.5rem;
   }
 
+  p {
+    font-size: 1.25rem;
+  }
+
+  figcaption {
+    font-size: 1rem;
+  }
+
   .hamburger-icon {
     font-size: 3.5rem;
     margin: 2rem;
+  }
+
+  .cross-icon {
+    margin-left: 93%;
+  }
+
+  .side-nav a {
+    font-size: 1.5rem;
   }
 
   main {
@@ -281,10 +300,6 @@ main {
   }
 
   /* About */
-  #about p {
-    font-size: 1.25rem;
-  }
-
   #about img {
     width: 50%;
   }
@@ -294,10 +309,6 @@ main {
   }
 
   /* Projects */
-  .project-container p {
-    font-size: 1rem;
-  }
-
   #projects img {
     width: 50%;
     margin: 1rem auto;
@@ -306,114 +317,59 @@ main {
 
 /* Desktop styling min width 1024px*/
 @media screen and (min-width: 64rem) {
-  .desktop {
-    display: block;
-  }
-
-  .mobile {
-    display: none;
-  } 
-
   h1 {
-    font-size: 4rem;
-    padding: 0 0 0 1.5rem;
-    margin: 0;
-    text-align: left;
+    font-size: 5rem;
+    padding: 2rem 0rem;
+
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    margin: 2rem 0;
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  figcaption {
+    font-size: 1.25rem;
   }
   
   /* Header */
-  header {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: end;
-    padding: 1.5rem 0;
+  .hamburger-icon {
+    font-size: 5rem;
+    margin: 2rem;
   }
 
-  nav ul {
-    display: flex;
-    justify-content: end;
-    padding: 0 1.5rem 0 0;
+  .cross-icon {
+    font-size: 5rem;
+    margin-left: 93%;
   }
 
-  nav ul li {
-    margin: 0 0.5rem;
-    font-size: 1.75rem;
-    padding-bottom: 00.5rem;
-  }
-
-  nav ul li:last-child {
-    margin: 0;
-  }
-
-  nav ul li a:hover {
-    color: white;
+  .side-nav a {
+    font-size: 2rem;
   }
 
   /* Main */
-  main {
-    margin: 9rem 1.5rem 1.5rem;
-  }
 
   /* About */
-  #about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0;
-  }
-
-  #about h2 {
-    margin: 0 0 1rem 0;
-    padding: 0;
-  }
-
-  #about p {
-    font-size: 1rem;
-  }
-
   #about img {
-    width: 92%;
-    margin: 0;
+    width: 40%;
+    margin: 0 auto;
     padding: 0;
   }
 
   #about figure {
     margin: 0;
-    padding: 0;
-  }
-
-  #about div {
-    margin: 0;
-    padding: 0;
+    padding: 0rem;
   }
 
   /* Skills */
-  #skills {
-    margin: 0rem;
-  }
-
-  #skills div {
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  #skills h2 {
-    padding: 8rem 0 3rem 0;
-    margin: 0;
-  }
-
   #skills img {
     margin: 0;
     padding: 0;
@@ -425,15 +381,7 @@ main {
     padding: 0;
   }
 
-  #skills figcaption {
-    font-size: 1.25rem;
-  }
-
   /* Projects */
-  #projects h2 {
-    padding-top: 8rem;
-    margin-bottom: 3rem;
-  }
 
   #projects h3 {
     margin-top: 0;
@@ -477,60 +425,24 @@ main {
 /* Desktop styling min width 1280px*/
 @media screen and (min-width: 80rem) {
   h1 {
-    font-size: 5rem;
+    font-size: 6.5rem;
   }
   
   h2 {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   h3 {
     font-size: 2rem;
   }
 
-  main {
-    margin-top: 11rem;
+  p {
+    font-size: 1.5rem;
   }
 
-  #about {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2.5rem;
-  }
-
-  #about h2 {
-    margin-bottom: 2rem;
-  }
-
-  #about p {
-    font-size: 1.4rem;
-  }
-
-  #about img {
-    width: 100%;
-  }
-  
-  #skills h2 {
-    padding-top: 11rem;
-  }
-
-  #skills figure {
-    width: 8rem;
-    margin: 0 2rem 3rem 0;
-    padding: 0;
-  }
-
-  #projects h2 {
-    padding-top: 11rem;
-  }
-
-  .project-subtitle {
-    font-size: 1.4rem;
-    text-align: left;
-    margin-left: 2.5rem;
-    margin-left: 2.5rem;
-  }
-
-  .project-container p {
-    font-size: 1.2rem;
+  /* Header */
+  .hamburger-icon {
+    font-size: 5rem;
+    margin: 2.5rem;
   }
 }
