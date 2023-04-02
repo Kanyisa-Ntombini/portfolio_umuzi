@@ -322,15 +322,11 @@ main {
   }
 
   h2 {
-    font-size: 2.75rem;
+    font-size: 3rem;
   }
 
   h3 {
-    font-size: 1.45rem;
-  }
-
-  #about p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   
   /* Header */
@@ -368,23 +364,27 @@ main {
 
   /* Main */
   main {
-    margin: 7rem 1.5rem 1.5rem;
+    margin: 9rem 1.5rem 1.5rem;
   }
 
   /* About */
   #about {
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    padding: 2rem 0 0;
-  }
-
-  #about h2 {
-    margin: 0;
+    grid-template-columns: 1fr 1fr;
     padding: 0;
   }
 
+  #about h2 {
+    margin: 0 0 1rem 0;
+    padding: 0;
+  }
+
+  #about p {
+    font-size: 1rem;
+  }
+
   #about img {
-    width: 100%;
+    width: 92%;
     margin: 0;
     padding: 0;
   }
@@ -396,27 +396,32 @@ main {
 
   #about div {
     margin: 0;
-    padding: 0 0 0 1.5rem;
+    padding: 0;
   }
 
   /* Skills */
   #skills {
-    margin: 3.5rem 0 3rem;
+    margin: 0rem;
+  }
+
+  #skills div {
+    width: 50%;
+    margin: 0 auto;
   }
 
   #skills h2 {
-    padding: 0;
-    margin: 0 0 2rem;
+    padding: 8rem 0 3rem 0;
+    margin: 0;
   }
 
   #skills img {
-    margin-right: 1rem;
+    margin: 0;
     padding: 0;
   }
 
   #skills figure {
-    width: 5em;
-    margin: 0;
+    width: 6rem;
+    margin: 0 2rem 3rem 0;
     padding: 0;
   }
 
@@ -426,11 +431,13 @@ main {
 
   /* Projects */
   #projects h2 {
-    margin: 2rem 0;
+    padding-top: 8rem;
+    margin-bottom: 3rem;
   }
 
   #projects h3 {
     margin-top: 0;
+    margin-bottom: 2rem;
   }
 
   .project-subtitle {
@@ -448,33 +455,82 @@ main {
   }
 
   .project-container p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .project-container img, .project-container p {
     width: 80%;
     margin: 1rem auto;
   }
+
+  #contact p {
+    font-size: 1.25rem;
+    margin: 1.75rem 0;
+  }
+
+  #contact img {
+    width: 5rem;
+    margin: 0 1.5rem 0 0;
+  }
 } 
 
 /* Desktop styling min width 1280px*/
 @media screen and (min-width: 80rem) {
+  h1 {
+    font-size: 5rem;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  main {
+    margin-top: 11rem;
+  }
+
   #about {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5rem;
+  }
+
+  #about h2 {
+    margin-bottom: 2rem;
   }
 
   #about p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+  }
+
+  #about img {
+    width: 100%;
   }
   
-  #skills {
-    margin-top: 2.25rem;
+  #skills h2 {
+    padding-top: 11rem;
+  }
+
+  #skills figure {
+    width: 8rem;
+    margin: 0 2rem 3rem 0;
+    padding: 0;
+  }
+
+  #projects h2 {
+    padding-top: 11rem;
   }
 
   .project-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: left;
     margin-left: 2.5rem;
     margin-left: 2.5rem;
+  }
+
+  .project-container p {
+    font-size: 1.2rem;
   }
 }
